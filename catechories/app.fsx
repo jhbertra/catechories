@@ -2,4 +2,4 @@
 open Suave
 open Suave.Successful
 
-let app = OK "Hello Suave!?"
+let app = OK "Hello Suave!\n"
