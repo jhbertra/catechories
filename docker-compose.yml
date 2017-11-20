@@ -1,7 +1,16 @@
-web:
-  build: .
-  working_dir: /app
-  ports:
-    - "8083:8083"
-  volumes:
-    - .:/app
+version: '2'
+
+services:
+  reverseproxy:
+    build: ./reverse-proxy-dev
+    ports:
+      - 8080:8080
+    restart: always
+
+  app:
+    build: .
+    depends_on:
+      - reverseproxy
+    working_dir: /app
+    volumes:
+      - .:/app
