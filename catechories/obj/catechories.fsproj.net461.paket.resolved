@@ -1,0 +1,11 @@
+FSharp.Core,4.2.3,Direct,Main
+FParsec,1.0.3,Transitive,Main
+Microsoft.NETCore.Platforms,2.0.1,Transitive,Main
+Hopac,0.3.23,Transitive,Main
+NodaTime,2.2.3,Transitive,Main
+Logary,4.2.1,Transitive,Main
+System.Collections.Immutable,1.4,Transitive,Main
+System.Reflection.Metadata,1.5,Transitive,Main
+FSharp.Compiler.Service,17.0.1,Direct,Main
+Suave,2.2.1,Direct,Main
+Logary.Adapters.Suave,4.0.200,Direct,Main
