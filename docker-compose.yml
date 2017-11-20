@@ -1,16 +1,10 @@
 version: '2'
 
 services:
-  reverseproxy:
-    build: ./reverse-proxy-dev
-    ports:
-      - 8080:8080
-    restart: always
-
-  app:
+  web:
     build: .
-    depends_on:
-      - reverseproxy
     working_dir: /app
+    ports:
+      - "8083:8083"
     volumes:
       - .:/app
